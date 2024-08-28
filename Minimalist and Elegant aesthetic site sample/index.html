@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liceria & Co.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="logo"><a href="#">Liceria & Co.</a></div>
+        <div class="sidebar">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        <div class="ul_container">
+          <ul>
+            <li>
+              <a href="#" style="color: #a17d60; font-weight: bold">Home</a>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="ul_container_mobile">
+          <i class="fa-solid fa-circle-xmark fa-xl"></i>
+          <ul>
+            <li>
+              <a href="#" style="color: #a17d60; font-weight: bold">Home</a>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="banner_section">
+          <div class="banner_block">
+            <img src="Images/Banner.png" alt="banner.png" />
+          </div>
+          <div class="txt">We believe in Minimalism. Less is More.</div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-cards">
+          <div class="section-cards_wrapper">
+            <div class="section_block">
+              <a href="">our services</a>
+              <div class="section_img_block">
+                <img
+                  src="Images/our_services_image.png"
+                  alt="our_services_img"
+                />
+              </div>
+            </div>
+
+            <div class="section_block">
+              <a href="">Client Testimonials</a>
+              <div class="section_img_block">
+                <img
+                  src="Images/client_testimonial_image.png"
+                  alt="client_testimonial_image"
+                />
+              </div>
+            </div>
+
+            <div class="section_block">
+              <a href="">Portfolio</a>
+              <div class="section_img_block">
+                <img src="Images/portfolio_image.png" alt="portfolio_image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const close_sidebar = document.querySelector(".fa-circle-xmark");
+      const sidebar = document.querySelector(".ul_container_mobile");
+      const open_sidebar = document.querySelector(".fa-bars");
+
+      close_sidebar.addEventListener("click", function () {
+        sidebar.style.display = "none";
+      });
+
+      open_sidebar.addEventListener("click", function () {
+        sidebar.style.display = "block";
+      });
+    </script>
+  </body>
+</html>
